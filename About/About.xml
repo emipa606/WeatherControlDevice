@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Weather Control Device (Continued)</name>
   <packageId>Mlie.WeatherControlDevice</packageId>
@@ -47,4 +47,3 @@ Through the use of complex algorithms, this device is able to hack into defunct 
 [/list]
 </description>
 </ModMetaData>
-

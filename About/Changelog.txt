@@ -1,4 +1,7 @@
 # Changelog for WeatherControlDevice
 
+1.0.1.0 - Removed a lot of irrelevant graphic-files
+
+
 1.0.0.0 - First publish
 

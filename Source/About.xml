@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Weather Control Device</name>
+  <author>MrGlasses</author>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>mrglasses.weathercontroldevice</packageId>
+  <description>V1.0
+	Through the use of complex algorithms, this device is able to hack into defunct terraforming satellites to change the weather in a localized area!
+	
+	This mod allows you to build a console that will control the weather around your base. To keep the weather constant you must keep the device powered (1000kw) but note that it will short out in the rain. 
+	
+	Requires Microelectronics research to build, find it under the "Misc" tab. 
+	
+	Art is just a shrunken down, reskin of the old communications console. 
+	</description>
+</ModMetaData>

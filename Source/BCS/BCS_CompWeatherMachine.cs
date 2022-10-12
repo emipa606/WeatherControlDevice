@@ -1,8 +1,7 @@
 using Verse;
 
-namespace BCS
+namespace BCS;
+
+internal class BCS_CompWeatherMachine : ThingComp
 {
-    internal class BCS_CompWeatherMachine : ThingComp
-    {
-    }
 }

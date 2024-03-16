@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <JobDef>
+    <defName>BCS_JobDefsRain</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsClear</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsFog</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsDryThunderstorm</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsRainyThunderstorm</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsFoggyRain</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsSnowHard</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <JobDef>
+    <defName>BCS_JobDefsSnowGentle</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+  </JobDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>BCS_WeatherMachine</defName>
+    <label>Terraformer Uplink</label>
+    <thingClass>BCS.BCS_WeatherMachine</thingClass>
+    <description>Through use of complex algorithms, this device attempts to hack into defunct terraforming satellites to change the weather in a localized area.</description>
+    <uiIconPath>Things/Building/WeatherController_north</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/WeatherController</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.0,1.25)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+      <Gold>20</Gold>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Misc</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="BCS.BCS_CompProperties">
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Clear</useLabel>
+        <useJob>BCS_JobDefsClear</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Rain</useLabel>
+        <useJob>BCS_JobDefsRain</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Rainy Thunderstorm</useLabel>
+        <useJob>BCS_JobDefsRainyThunderstorm</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Dry Thunderstorm</useLabel>
+        <useJob>BCS_JobDefsDryThunderstorm</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Foggy Rain</useLabel>
+        <useJob>BCS_JobDefsFoggyRain</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Foggy</useLabel>
+        <useJob>BCS_JobDefsFog</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Blizzard</useLabel>
+        <useJob>BCS_JobDefsSnowHard</useJob>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useLabel>Snow</useLabel>
+        <useJob>BCS_JobDefsSnowGentle</useJob>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>BCS.WeatherMachineEffect</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectArtifact">
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

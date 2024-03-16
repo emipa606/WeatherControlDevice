@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>96ab26e8-04a1-423e-b9e3-0581b8e841ec</ID>
   <ModName>Weather Control Device (Continued)</ModName>
-  <Version>1.4.1</Version>
+  <Version>1.5.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>

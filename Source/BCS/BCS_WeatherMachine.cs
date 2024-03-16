@@ -16,7 +16,7 @@ public class BCS_WeatherMachine : Building
 
     public override void Tick()
     {
-        if (Find.TickManager.TicksGame % 2500 != 0 || _Power == null || !_Power.PowerOn)
+        if (Find.TickManager.TicksGame % 2500 != 0 || _Power is not { PowerOn: true })
         {
             return;
         }

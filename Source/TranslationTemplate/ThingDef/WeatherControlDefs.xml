@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Terraformer Uplink -->
+  <BCS_WeatherMachine.label>Terraformer Uplink</BCS_WeatherMachine.label>
+  <!-- EN: Through use of complex algorithms, this device attempts to hack into defunct terraforming satellites to change the weather in a localized area. -->
+  <BCS_WeatherMachine.description>Through use of complex algorithms, this device attempts to hack into defunct terraforming satellites to change the weather in a localized area.</BCS_WeatherMachine.description>
+  <!-- EN: Clear -->
+  <BCS_WeatherMachine.comps.CompUsable-0.useLabel>Clear</BCS_WeatherMachine.comps.CompUsable-0.useLabel>
+  <!-- EN: Rain -->
+  <BCS_WeatherMachine.comps.CompUsable-1.useLabel>Rain</BCS_WeatherMachine.comps.CompUsable-1.useLabel>
+  <!-- EN: Rainy Thunderstorm -->
+  <BCS_WeatherMachine.comps.CompUsable-2.useLabel>Rainy Thunderstorm</BCS_WeatherMachine.comps.CompUsable-2.useLabel>
+  <!-- EN: Dry Thunderstorm -->
+  <BCS_WeatherMachine.comps.CompUsable-3.useLabel>Dry Thunderstorm</BCS_WeatherMachine.comps.CompUsable-3.useLabel>
+  <!-- EN: Foggy Rain -->
+  <BCS_WeatherMachine.comps.CompUsable-4.useLabel>Foggy Rain</BCS_WeatherMachine.comps.CompUsable-4.useLabel>
+  <!-- EN: Foggy -->
+  <BCS_WeatherMachine.comps.CompUsable-5.useLabel>Foggy</BCS_WeatherMachine.comps.CompUsable-5.useLabel>
+  <!-- EN: Blizzard -->
+  <BCS_WeatherMachine.comps.CompUsable-6.useLabel>Blizzard</BCS_WeatherMachine.comps.CompUsable-6.useLabel>
+  <!-- EN: Snow -->
+  <BCS_WeatherMachine.comps.CompUsable-7.useLabel>Snow</BCS_WeatherMachine.comps.CompUsable-7.useLabel>
+</LanguageData>

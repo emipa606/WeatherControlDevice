@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsClear.reportString>Doing something.</BCS_JobDefsClear.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsDryThunderstorm.reportString>Doing something.</BCS_JobDefsDryThunderstorm.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsFog.reportString>Doing something.</BCS_JobDefsFog.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsFoggyRain.reportString>Doing something.</BCS_JobDefsFoggyRain.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsRain.reportString>Doing something.</BCS_JobDefsRain.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsRainyThunderstorm.reportString>Doing something.</BCS_JobDefsRainyThunderstorm.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsSnowGentle.reportString>Doing something.</BCS_JobDefsSnowGentle.reportString>
+  <!-- EN: Doing something. -->
+  <BCS_JobDefsSnowHard.reportString>Doing something.</BCS_JobDefsSnowHard.reportString>
+</LanguageData>

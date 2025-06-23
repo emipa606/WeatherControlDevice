@@ -6,17 +6,17 @@ namespace BCS;
 [StaticConstructorOnStartup]
 public class BCS_WeatherMachine : Building
 {
-    private CompPowerTrader _Power;
+    private CompPowerTrader power;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
-        _Power = GetComp<CompPowerTrader>();
+        power = GetComp<CompPowerTrader>();
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
-        if (Find.TickManager.TicksGame % 2500 != 0 || _Power is not { PowerOn: true })
+        if (Find.TickManager.TicksGame % 2500 != 0 || power is not { PowerOn: true })
         {
             return;
         }
@@ -27,18 +27,18 @@ public class BCS_WeatherMachine : Building
             return;
         }
 
-        var bCS_WeatherType = properties.BCS_WeatherType;
+        var bCsWeatherType = properties.BCS_WeatherType;
         var weatherManager = Find.CurrentMap.weatherManager;
 
-        if (weatherManager.curWeather != WeatherDef.Named(bCS_WeatherType))
+        if (weatherManager.curWeather != WeatherDef.Named(bCsWeatherType))
         {
-            weatherManager.TransitionTo(WeatherDef.Named(bCS_WeatherType));
+            weatherManager.TransitionTo(WeatherDef.Named(bCsWeatherType));
         }
 
         var weatherAgeTarget = weatherManager.curWeather.durationRange.min / 2;
 
         if (weatherManager.curWeatherAge >= weatherAgeTarget &&
-            weatherManager.curWeather == WeatherDef.Named(bCS_WeatherType))
+            weatherManager.curWeather == WeatherDef.Named(bCsWeatherType))
         {
             weatherManager.curWeatherAge = weatherAgeTarget;
         }

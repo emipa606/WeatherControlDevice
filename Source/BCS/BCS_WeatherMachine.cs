@@ -16,7 +16,7 @@ public class BCS_WeatherMachine : Building
 
     protected override void Tick()
     {
-        if (Find.TickManager.TicksGame % 2500 != 0 || power is not { PowerOn: true })
+        if (!this.IsHashIntervalTick(2500) || power is not { PowerOn: true })
         {
             return;
         }
